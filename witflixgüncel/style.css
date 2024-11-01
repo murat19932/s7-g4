@@ -1,0 +1,299 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  font-size: 16px;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: "Signika";
+
+  --primary-red: #e50914;
+  --bg-primary: #000000;
+  --bg-secondary: #222222;
+  --typo1: #ffffff;
+  --typo2: #8c8c8c;
+  --typo3: #757575;
+  --typo4: #999999;
+  --acc1: #0071eb;
+  --acc2: #ffa00a;
+  --acc3: #5fa53f;
+
+  margin: 0;
+  padding: 0;
+}
+.container {
+  padding: 4rem;
+  border: 15px solid var(--primary-red);
+}
+.header {
+  background-color: var(--primary-red);
+  padding: 3rem;
+  color: var(--typo1);
+}
+
+body {
+  background-color: var(--bg-primary);
+}
+
+h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  letter-spacing: -0.5%;
+  line-height: 1.1;
+  color: var(--typo1);
+}
+
+h2 {
+  color: var(--typo1);
+  font-size: 2rem;
+  line-height: -1.1;
+  letter-spacing: -1%;
+  font-weight: 500;
+}
+
+h3 {
+  color: var(--typo1);
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: auto;
+  letter-spacing: -0.5%;
+}
+h4 {
+  font-size: 1.1rem;
+}
+.primary-container {
+  display: flex;
+  gap: 2rem;
+}
+
+.primary-card {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.primary-card-color {
+  height: 300px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-left: 2rem;
+  aspect-ratio: 16/9;
+}
+.typo-box {
+  color: var(--typo1);
+}
+.typo-colorbox {
+  display: flex;
+}
+
+.colorbox {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 150px;
+  height: 150px;
+  color: var(--bg-primary);
+  border-radius: 5px;
+  padding: 1rem;
+}
+
+.align-end {
+  justify-content: flex-end;
+}
+.main-1 {
+  background-color: var(--primary-red);
+  color: var(--typo1);
+  padding: 0.5rem;
+}
+.main-1 p {
+  letter-spacing: 0.1rem;
+}
+.acc-box {
+  width: 500px;
+  height: 300px;
+}
+.acc-colorbox {
+  display: flex;
+  justify-content: space-between;
+}
+.accbox {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 150px;
+  height: 150px;
+  color: var(--typo1);
+  border-radius: 5px;
+  padding: 1rem;
+}
+.main-2 {
+  background-color: var(--typo1);
+  color: var(--typo1);
+  padding: 0.5rem;
+}
+.main-2 p {
+  text-align: center;
+  letter-spacing: 0.1rem;
+}
+
+.back-box {
+  width: 600px;
+  height: 288px;
+  margin-top: 0;
+}
+.back-colorbox {
+  display: flex;
+  justify-content: flex-start;
+  gap: 25px;
+}
+.back-color {
+  color: var(--typo1);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+  width: 150px;
+  height: 150px;
+  padding-left: 14px;
+  padding-bottom: 14px;
+}
+.back-color:first-child {
+  border: 2px solid var(--typo1);
+}
+.button-container {
+  margin: 1rem;
+  width: 300px;
+  border: 1px solid var(--typo1);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-around;
+  gap: 0.5rem;
+  padding: 1rem;
+}
+
+.primary-button,
+button {
+  font-size: 1.2rem;
+  letter-spacing: 0.1%;
+  background-color: var(--typo1);
+  color: var(--bg-primary);
+  border-radius: 0.5rem;
+  border: 0;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1.2rem;
+  opacity: 1;
+  transition: all 0.3s ease-in-out;
+}
+.secondary-button {
+  background-color: rgba(255, 255, 255, 0.3);
+  color: var(--typo1);
+}
+.primary-button:hover,
+.secondary-button:hover {
+  opacity: 0.8;
+}
+.out-button {
+  display: flex;
+  justify-content: center;
+}
+
+.outline-button {
+  font-size: 1rem;
+  background-color: transparent;
+  color: var(--typo3);
+  border: 1px solid var(--typo3);
+  border-radius: 0;
+}
+.outline-button:hover {
+  color: var(--typo1);
+  border: 1px solid var(--typo1);
+}
+.profiles {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 2rem;
+  justify-content: center;
+}
+.profiles-container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  row-gap: 2rem;
+  height: 100vh;
+  justify-content: center;
+}
+
+.profile-box {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 1rem;
+}
+.profile-box img {
+  width: 200px;
+  border-radius: 5px;
+}
+.users-container {
+  display: flex;
+  gap: 2rem;
+  text-align: center;
+  color: var(--typo3);
+}
+.add-profile {
+  margin: auto;
+  background: none;
+}
+.add-profile:hover {
+  background: rgb(0, 0, 0, 0.1);
+}
+.profile-box:hover {
+  background-color: var(--bg-secondary);
+  color: var(--typo1);
+  transition: all 0.3s ease-in-out;
+  border-radius: 5px;
+}
+.card {
+  margin-left: 1rem;
+  background-color: var(--bg-secondary);
+  min-width: 20rem;
+  aspect-ratio: 16/9;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card img {
+  height: 2.5rem;
+}
+
+.card img:first-of-type {
+  padding: 0.2rem;
+}
+
+.card > div {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card > span {
+  background-color: var(--primary-red);
+  color: var(--typo1);
+  align-self: center;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  padding: 0.25rem 0.5rem;
+}
+.ds-element-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  padding: 1rem 0;
+}
